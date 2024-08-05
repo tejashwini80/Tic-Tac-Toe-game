@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3350c5, #76fff4);
+}
+
+.container {
+  text-align: center;
+  
+}
+
+#turn-display {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cell.x {
+  color: #f00;
+}
+
+.cell.o {
+  color: #00f;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(254, 38, 0, 0.83);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 11, 11, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #6b07c8;
+  padding: 20px;
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.popup-content p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#close-popup {
+  margin-top: 10px;
+}
